@@ -19,15 +19,9 @@
       --border: #e4e7ec;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -36,19 +30,11 @@
       line-height: 1.7;
     }
 
-    a {
-      text-decoration: none;
-    }
+    a { text-decoration: none; }
 
-    .container {
-      width: min(1080px, 90%);
-      margin: auto;
-    }
+    .container { width: min(1080px, 90%); margin: auto; }
 
-    header {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-    }
+    header { background: var(--white); border-bottom: 1px solid var(--border); }
 
     nav {
       min-height: 72px;
@@ -58,36 +44,33 @@
       gap: 20px;
     }
 
-    .logo {
-      color: var(--navy);
-      font-size: 1.15rem;
-      font-weight: 800;
-    }
+    .logo { color: var(--navy); font-size: 1.15rem; font-weight: 800; }
 
-    nav ul {
+    nav ul { display: flex; flex-wrap: wrap; gap: 20px; list-style: none; }
+
+    nav a { color: var(--text); font-size: 0.92rem; }
+
+    nav a:hover, .project-link:hover { color: var(--blue); }
+
+    .hero { background: var(--white); padding: 90px 0; }
+
+    .hero-content { max-width: 760px; }
+
+    .hero-inner {
       display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      list-style: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
     }
 
-    nav a {
-      color: var(--text);
-      font-size: 0.92rem;
-    }
-
-    nav a:hover,
-    .project-link:hover {
-      color: var(--blue);
-    }
-
-    .hero {
-      background: var(--white);
-      padding: 90px 0;
-    }
-
-    .hero-content {
-      max-width: 760px;
+    .profile-pic {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid var(--white);
+      box-shadow: 0 8px 24px rgba(20, 33, 61, 0.18);
+      flex-shrink: 0;
     }
 
     .eyebrow {
@@ -105,18 +88,9 @@
       margin: 16px 0;
     }
 
-    .hero p,
-    .section-intro {
-      color: var(--muted);
-      max-width: 700px;
-    }
+    .hero p, .section-intro { color: var(--muted); max-width: 700px; }
 
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 28px;
-    }
+    .buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
 
     .btn {
       display: inline-block;
@@ -125,10 +99,7 @@
       font-weight: 700;
     }
 
-    .btn-primary {
-      background: var(--blue);
-      color: var(--white);
-    }
+    .btn-primary { background: var(--blue); color: var(--white); }
 
     .btn-secondary {
       background: var(--white);
@@ -136,33 +107,20 @@
       border: 1px solid var(--border);
     }
 
-    section {
-      padding: 70px 0;
-    }
+    section { padding: 70px 0; }
 
-    .section-title {
-      color: var(--navy);
-      font-size: 2rem;
-      margin-bottom: 12px;
-    }
+    .section-title { color: var(--navy); font-size: 2rem; margin-bottom: 12px; }
 
-    .section-intro {
-      margin-bottom: 28px;
-    }
+    .section-intro { margin-bottom: 28px; }
 
-    .about-card,
-    .skill-card,
-    .project-card,
-    .contact-card {
+    .about-card, .skill-card, .project-card, .contact-card {
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: 14px;
       padding: 25px;
     }
 
-    .about-card p + p {
-      margin-top: 14px;
-    }
+    .about-card p + p { margin-top: 14px; }
 
     .skills-grid {
       display: grid;
@@ -171,25 +129,13 @@
       margin-top: 28px;
     }
 
-    .skill-icon {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
+    .skill-icon { font-size: 1.8rem; margin-bottom: 10px; }
 
-    .skill-card h3,
-    .project-card h3 {
-      color: var(--navy);
-      margin-bottom: 8px;
-    }
+    .skill-card h3, .project-card h3 { color: var(--navy); margin-bottom: 8px; }
 
-    .skill-card p,
-    .project-card p {
-      color: var(--muted);
-    }
+    .skill-card p, .project-card p { color: var(--muted); }
 
-    .projects {
-      background: #edf2f8;
-    }
+    .projects { background: #edf2f8; }
 
     .projects-grid {
       display: grid;
@@ -214,16 +160,9 @@
       margin-top: 8px;
     }
 
-    .contact-card {
-      text-align: center;
-      padding: 40px 25px;
-    }
+    .contact-card { text-align: center; padding: 40px 25px; }
 
-    .contact-card p {
-      color: var(--muted);
-      max-width: 650px;
-      margin: 10px auto;
-    }
+    .contact-card p { color: var(--muted); max-width: 650px; margin: 10px auto; }
 
     footer {
       background: var(--navy);
@@ -234,28 +173,14 @@
     }
 
     @media (max-width: 700px) {
-      nav {
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 15px 0;
-      }
-
-      nav ul {
-        gap: 12px 18px;
-      }
-
-      .hero {
-        padding: 65px 0;
-      }
-
-      .skills-grid,
-      .projects-grid {
-        grid-template-columns: 1fr;
-      }
-
-      section {
-        padding: 50px 0;
-      }
+      nav { align-items: flex-start; flex-direction: column; padding: 15px 0; }
+      nav ul { gap: 12px 18px; }
+      .hero { padding: 65px 0; }
+      .hero-inner { flex-direction: column-reverse; text-align: center; }
+      .hero .buttons { justify-content: center; }
+      .profile-pic { width: 180px; height: 180px; }
+      .skills-grid, .projects-grid { grid-template-columns: 1fr; }
+      section { padding: 50px 0; }
     }
   </style>
 </head>
@@ -269,7 +194,6 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -277,7 +201,8 @@
 
   <main>
     <section class="hero" id="home">
-      <div class="container hero-content">
+      <div class="container hero-inner">
+      <div class="hero-content">
         <span class="eyebrow">Aspiring Data Analyst</span>
 
         <h1>Favour Ozuruoha</h1>
@@ -285,4 +210,140 @@
         <p>
           I am building my skills in data analysis and learning to
           transform raw data into meaningful insights. My current
-          technical focus includes Excel,
+          technical focus includes Excel, SQL and Power BI.
+        </p>
+
+        <div class="buttons">
+          <a class="btn btn-primary" href="#skills">
+            Explore My Skills
+          </a>
+
+          <a class="btn btn-secondary"
+             href="https://www.linkedin.com/in/favour-ozuruoha-a6206342b"
+             target="_blank" rel="noopener noreferrer">
+            Connect on LinkedIn
+          </a>
+
+          <a class="btn btn-secondary"
+             href="https://github.com/Favour-lab14"
+             target="_blank" rel="noopener noreferrer">
+            View GitHub
+          </a>
+        </div>
+      </div>
+
+      <img class="profile-pic" src="profile.jpg" alt="Photo of Favour Ozuruoha">
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-card">
+          <p>
+            I am an aspiring data analyst developing practical skills
+            in data cleaning, analysis, reporting and visualisation.
+            I am building my knowledge of Excel, SQL and Power BI
+            through learning and hands-on projects.
+          </p>
+
+          <p>
+            My goal is to strengthen my analytical thinking, solve
+            data-related problems and communicate findings clearly
+            to support informed decision-making.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <p class="section-intro">
+          Tools I am developing and applying in my data analysis journey.
+        </p>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon">📊</div>
+            <h3>Microsoft Excel</h3>
+            <p>
+              Data organisation, cleaning, formulas, lookup functions
+              and pivot tables.
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">🗄️</div>
+            <h3>SQL</h3>
+            <p>
+              Querying data, filtering records, aggregations and
+              joining tables.
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">📈</div>
+            <h3>Power BI</h3>
+            <p>
+              Data transformation, dashboard creation, KPIs and
+              data visualisation.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <h2 class="section-title">Let's Connect</h2>
+
+          <p>
+            I welcome opportunities to connect with data professionals,
+            learn from experienced analysts and explore suitable
+            entry-level data analysis opportunities.
+          </p>
+
+          <div class="buttons" style="justify-content:center;">
+            <a class="btn btn-primary"
+               href="mailto:ozuruohafavour3@gmail.com">
+              Email Me
+            </a>
+
+            <a class="btn btn-secondary"
+               href="https://www.linkedin.com/in/favour-ozuruoha-a6206342b"
+               target="_blank" rel="noopener noreferrer">
+              LinkedIn Profile
+            </a>
+
+            <a class="btn btn-secondary"
+               href="https://github.com/Favour-lab14"
+               target="_blank" rel="noopener noreferrer">
+              GitHub Profile
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        © <span id="year"></span> Favour Ozuruoha |
+        Data Analyst Portfolio
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
