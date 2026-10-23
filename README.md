@@ -1,6 +1,6 @@
 # Hi, I'm Favour! 👋
 
-## Aspiring Data Analyst | Power BI | Excel | SQL | Python
+## Aspiring Data Analyst | Power BI | Excel | SQL 
 
 Welcome to my Data Analyst Portfolio!
 
